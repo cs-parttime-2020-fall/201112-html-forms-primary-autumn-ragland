@@ -1,0 +1,59 @@
+body {
+    padding: 1%;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr;
+}
+
+.container > * {
+    margin: 5px;
+}
+
+#officeImage {
+    grid-column: 2;
+}
+
+img {
+    width: 100%;
+}
+
+#accountForm {
+    grid-column: 3;
+    border: 5px solid black;
+    padding : 1%;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+form > div {
+    margin : 10px 0;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding : 3px 0;
+}
+
+.centeredSections {
+    text-align: center;
+}
+
+#submitBtn {
+    background-color: green;
+    color : white;
+}
+
+#resetBtn {
+    background-color: red;
+    color : white;
+}

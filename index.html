@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- page headings -->
+    <h1>Pine Co-Working</h1>
+    <h3>Create Your Account</h3>
+
+    <!-- grid container with two grid elements -->
+    <div class = "container">
+
+        <div id = "officeImage">
+            <!-- page image -->
+            <img src="https://images.unsplash.com/photo-1504297050568-910d24c426d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="office building hallway">
+        </div>
+
+        <div id = "accountForm">
+            <!-- account form -->
+            <form action="https://postman-echo.com/get">
+                <!-- first and last name text fields -->
+                <div>
+                    <label for="fName">First Name : </label>
+                    <input type="text" name="fName" id="fName" required>
+                    <label for="lName">Last Name : </label>
+                    <input type="text" name="lName" id="lName" required>
+                </div>
+                <!-- business and email field -->
+                <div>
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="business">Business : </label>
+                    <input type="text" name="business" id="business">
+                </div>
+                <!-- how you heard about us - dropdown -->
+                <div>
+                    <label for="advertising">How did you hear about us?</label>
+                    <select name="advertising" id="advertising">
+                        <option value="unselected">---</option>
+                        <option value="insta">Instagram</option>
+                        <option value="fb">Facebook</option>
+                        <option value="yt">YouTube</option>
+                        <option value="personal">Word of Mouth</option>
+                        <option value="print">Print Ad</option>
+                    </select>
+                </div>
+                <!-- group of weekday checkboxes -->
+                <div>
+                    <p>Which days do you plan to use the space - choose all that apply</p>
+                    <div>
+                        <label for="mon">Monday</label>
+                        <input type="checkbox" id="mon" name="mon">
+                        <label for="tues">Tuesday</label>
+                        <input type="checkbox" id="tues" name="tues">
+                        <label for="wedn">Wednesday</label>
+                        <input type="checkbox" id="wedn" name="wedn">
+                        <label for="thurs">Thursday</label>
+                        <input type="checkbox" id="thurs" name="thurs">
+                    </div>
+                    <div>
+                        <label for="fri">Friday</label>
+                        <input type="checkbox" id="fri" name="fri">
+                        <label for="satSun">Weekend</label>
+                        <input type="checkbox" id="satSun" name="satSun">
+                    </div>
+                </div>
+                <!-- start date field -->
+                <div>
+                    <label for="start">Desired Start Date</label>
+                    <input type="date" id="start" name="start" required>
+                </div>
+                <!-- radio button group -->
+                <div class = "centeredSections">
+                    <p>Please choose the description that best fits your type of work</p>
+                    <input type="radio" name="work" value="freelance" id="freelance">
+                    <label for="freelance">Freelance</label>
+                    <input type="radio" name="work" value="remote" id="remote">
+                    <label for="remote">Remote</label>
+                    <input type="radio" name="work" value="traditional" id="traditional">
+                    <label for="traditional">Traditional</label>
+                </div>
+
+                <!-- submit and rest button -->
+                <div class = "centeredSections">
+                    <button type="submit" id = "submitBtn">Submit Form</button>
+                    <button type="reset" id = "resetBtn">Reset Form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
